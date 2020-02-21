@@ -1,0 +1,53 @@
+.form {
+    position: fixed;
+    top: 28%;
+    left: 0;
+    margin-left: -266px;
+    transition: all .3s;
+
+    &__holder {
+        position: relative;
+        // border: 3px solid red;
+    }
+
+    &__input {
+        height: 40px;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+    }
+
+    &__btn {
+        margin: 0;
+        margin-left: -5px;
+        border: 1px solid #ff9b05;
+        background-color: #ff9b05;
+        height: 40px;
+        color: #fff;
+        padding: 3px 8px;
+        position: absolute;
+        // right: 0;
+        top: 0;
+        left: 180px;
+    }
+
+    
+}
+
+.btn__icon {
+    background-color: #0074c8;
+    height: 40px;
+    left: 266px;
+    border: 1px solid #0074c8;
+    padding: 10px 15px;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #025794;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

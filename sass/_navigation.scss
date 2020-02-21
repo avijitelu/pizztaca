@@ -1,0 +1,124 @@
+.navigation {
+    // border: 1px solid red;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.topnav {
+
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+
+    &__item {
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        color: #333;
+
+        &:not(:last-child) {
+            border-right: none;
+        }
+
+        &:last-child {
+            background-color: #1c94ea;
+            color: #fff;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 14px;
+        color: inherit;
+
+        &:hover {
+            color: #0074c8;
+            text-decoration: none;
+        }
+
+        
+    }
+}
+
+.middlenav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+
+    & > *:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        align-self: center;
+
+        i {
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 6px;
+            color: #0074c8;
+        }
+    }
+
+    &__call {
+        h6 {
+            color: #0074c8;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 0;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+}
+
+.mainnav {
+    background-color: #0074c8;
+    margin-top: 20px;
+
+    &__list {
+        display: flex;
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    &__item {
+        border-left: 1px solid #9b9b9b;
+
+        &:last-child {
+            border-right: 1px solid #9b9b9b;
+        }
+    }
+
+    &__link {
+        color: #e4e4e4;
+        text-transform: uppercase;
+        font-size: 12px;
+        display: block;
+        padding: 8px 13px;
+
+        &:hover {
+            text-decoration: none;
+            color: rgb(207, 207, 91);
+        }
+    }
+}

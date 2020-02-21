@@ -1,0 +1,29 @@
+.mybtn {
+    border: none;
+    color: #fff;
+    border-radius: 100px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all .3s;
+    box-shadow: 0 2px 3px rgba(0,0,0,.3);
+
+    &:focus {
+        outline: none;
+    }
+
+    &--red {
+        background-color: #ec503e;
+
+        &:hover {
+            background-color: #cc2816;
+        }
+    }
+
+    &--red-dark {
+        background-color: #b94538;
+
+        &:hover {
+            background-color: #862a20;
+        }
+    }
+}
